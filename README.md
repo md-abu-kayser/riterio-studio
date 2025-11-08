@@ -1,440 +1,183 @@
-Riterio - Premium Interior Design Website
-<div align="center">
-https://via.placeholder.com/1200x400/ABEF5F/000000?text=Riterio+Premium+Interior+Design
+# LuxeVista Interiors | Premium Design Excellence
 
-A World-Class Interior Design Website Built with Modern Web Technologies
+Professional, responsive static website template — lightweight, accessible, and easy to deploy.
 
-https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
-https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
-https://img.shields.io/badge/DaisyUI-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white
-https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Top Language](https://img.shields.io/github/languages/top/md-abu-kayser/riterio-studio.svg)](https://github.com/md-abu-kayser/riterio-studio)
 
-https://img.shields.io/badge/Live_Demo-ABEF5F?style=for-the-badge&logo=vercel&logoColor=white
-https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
-https://img.shields.io/badge/License-MIT-green?style=for-the-badge
+Live demo: (Add your demo URL here)
 
-</div>
-🎯 Overview
-Riterio is a premium, fully responsive interior design website that showcases modern web development practices. Built with HTML5, CSS3, Tailwind CSS, and DaisyUI components, this project demonstrates cutting-edge frontend development with smooth animations, multiple themes, and exceptional user experience.
+---
 
-✨ Key Highlights
-🎨 5 Beautiful Themes + Dark Mode
+## Table of contents
 
-📱 Fully Responsive - Mobile First Design
+- Project overview
+- Features
+- Tech stack
+- Quick start
+  - Run locally
+  - Edit & extend
+- Deployment
+  - GitHub Pages
+  - Netlify
+  - Vercel
+- Project structure
+- Accessibility & SEO
+- Performance tips
+- Contributing
+- License
+- Contact
 
-⚡ Lightning Fast - Optimized Performance
+---
 
-🎭 Smooth Animations - CSS Transitions & Transformations
+## Project overview
 
-♿ Accessibility First - WCAG Compliant
+LuxeVista Interiors | Premium Design Excellence is a minimal, well-structured static website template. It ships with a single-file entry point (`index.html`), a stylesheet in `css/style.css`, and an `assets/` folder for images and other static resources. The layout is intentionally simple so you can adapt it quickly for portfolios, landing pages, or prototypes.
 
-🌙 Dark Mode - Automatic Theme Switching
+This repository is optimized for clarity, accessibility, and easy deployment to GitHub Pages, Netlify, or Vercel.
 
-🚀 Live Demo
-Experience the website: Riterio Live Demo
+## Features
 
-Preview:
-https://via.placeholder.com/800x450/ABEF5F/000000?text=Riterio+Website+Preview
+- Clean, semantic HTML structure
+- Responsive layout (mobile-first)
+- Centralized CSS in `css/style.css`
+- Static assets in `assets/`
+- Lightweight and fast by default
+- Easy to customize and deploy
 
-📋 Table of Contents
-Features
+## Tech stack
 
-Technology Stack
+- HTML5
+- CSS3 (plain CSS; no frameworks so you keep full control)
+- No build step required — purely static
 
-Project Structure
+## Quick start
 
-Installation
+These steps will get the project running locally in seconds.
 
-Usage
+1. Clone the repository
 
-Themes Customization
+```powershell
+git clone https://github.com/md-abu-kayser/riterio-studio.git
+cd riterio-studio
+```
 
-Performance
+2. Open `index.html` in your browser (double-click) or use a local server for a better dev experience.
 
-Browser Support
+Run a simple local static server (recommended):
 
-Contributing
+```powershell
+# With Python 3 (PowerShell)
+python -m http.server 8000
+# Then open http://localhost:8000
 
-License
+# Or use VS Code: install the Live Server extension and click "Go Live"
+```
 
-Contact
+### Edit & extend
 
-🌟 Features
-🎨 Design & UI/UX
-5 Premium Themes: Ocean Blue, Rose Pink, Royal Purple, Sunset Orange, Golden Yellow
+- HTML: `index.html` — edit the page structure and content.
+- CSS: `css/style.css` — modify or extend styles.
+- Assets: `assets/` — put images, icons, and other static files here.
 
-Dark Mode Support: Seamless theme switching
+Tips:
 
-Glass Morphism Effects: Modern translucent elements
+- Keep component styles modular and prefixed if you copy styles into larger projects.
+- Add a `favicon.ico` in the repo root and meta tags in `index.html` for better UX and SEO.
 
-Gradient Text & Backgrounds: Eye-catching visual elements
+## Deployment
 
-Custom Animations: CSS keyframes and transitions
+Pick the provider you prefer — all work great with this static site.
 
-Smooth Scrolling: Enhanced navigation experience
+### GitHub Pages (quick)
 
-📱 Responsive Design
-Mobile-First Approach: Optimized for mobile devices
+1. Push your repository to GitHub.
+2. In the repository settings → Pages, set Source to `main` branch and root (`/`).
+3. Save — your site will be available at `https://<your-username>.github.io/<repo-name>/`.
 
-Tablet Optimization: Perfect layout for tablets
+Notes: If your site is in the repository root and `index.html` exists, GitHub Pages will serve it automatically.
 
-Desktop Excellence: Full-featured desktop experience
+### Netlify (drag & drop or git)
 
-Cross-Browser Compatibility: Works on all modern browsers
+- Drag-and-drop: Zip the repo root and drop it into the Netlify dashboard Sites → New site from Git → Deploy site (drag-and-drop).
+- Git-backed: Connect the GitHub repo in Netlify, select the branch, and deploy (no build command required).
 
-⚡ Performance & Accessibility
-Fast Loading: Optimized assets and code
+### Vercel
 
-SEO Optimized: Proper meta tags and structure
+- Create a new project, import your GitHub repository, and set the root directory. Since this is a static site, you can keep build settings empty — Vercel will detect static files.
 
-Accessibility: ARIA labels and keyboard navigation
+## Project structure
 
-Progressive Enhancement: Graceful degradation
+```
+.
+├─ index.html            # Main HTML file
+├─ LICENSE
+├─ README.md
+├─ assets/               # Images, icons, fonts, etc.
+└─ css/
+	 └─ style.css         # Main stylesheet
+```
 
-🔧 Interactive Elements
-Theme Switcher: Dynamic theme changing
+## Accessibility & SEO
 
-Hover Animations: Interactive element states
+- Use semantic elements (`header`, `main`, `nav`, `footer`, `section`, `article`).
+- Provide `alt` attributes for all images in `assets/`.
+- Include meta tags for viewport, description, and Open Graph in `index.html`.
+- Use headings (`h1`..`h6`) in order and avoid skipping levels.
 
-Parallax Effects: Engaging visual depth
+Example meta snippet for `index.html`:
 
-Smooth Transitions: CSS-powered animations
+```html
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta
+  name="description"
+  content="Short, clear description of what Riterio Studio is."
+/>
+<meta property="og:title" content="Riterio Studio" />
+<meta
+  property="og:description"
+  content="Short description for social previews"
+/>
+<meta property="og:image" content="/assets/social-preview.png" />
+```
 
-Form Validation: User-friendly input handling
+## Performance tips
 
-🛠 Technology Stack
-Frontend Technologies
-Technology	Purpose	Version
-HTML5	Structure & Semantics	Latest
-CSS3	Styling & Animations	Latest
-Tailwind CSS	Utility-First CSS Framework	4.x
-DaisyUI	Component Library	5.x
-JavaScript	Interactivity & DOM Manipulation	ES6+
-Development Tools
-Tool	Purpose
-Font Awesome	Icons & UI Elements
-Google Fonts	Typography (Manrope)
-CDN Services	Content Delivery
-Git	Version Control
-Design Principles
-Mobile-First Responsive Design
+- Serve compressed images (WebP or optimized JPEG/PNG).
+- Defer non-critical CSS and inline critical CSS if you need faster first paint.
+- Use responsive images (`srcset`) for different viewport sizes.
+- Remove unused CSS rules and keep selectors specific but minimal.
 
-Component-Based Architecture
+## Tests & quality
 
-Utility-First CSS Approach
+This is a static project, so tests are manual-oriented:
 
-Progressive Enhancement
+- Validate HTML: https://validator.w3.org/
+- Lint CSS: use stylelint locally or in your CI for larger projects.
 
-Accessibility-First Development
+## Contributing
 
-📁 Project Structure
-text
-riterio/
-├── 📄 index.html                 # Main HTML file
-├── 🎨 assets/                    # Static assets directory
-│   ├── 📱 banner.png            # Hero banner image
-│   ├── 🏠 Rectangle.png         # Home design showcase
-│   ├── 📊 commercial.png        # Commercial services icon
-│   ├️── 🏡 residential.png      # Residential services icon
-│   ├── 💡 concept.png           # Process concept icon
-│   ├── 📈 flow-chart.png        # Design process icon
-│   ├── 👁️ vision.png           # Supervision icon
-│   ├── 💰 budget-planning.png   # Budget planning icon
-│   ├── 🖼️ img1.png             # Portfolio image 1
-│   ├── 🖼️ img2.png             # Portfolio image 2
-│   ├── 🖼️ img3.png             # Portfolio image 3
-│   ├── 🖼️ img4.png             # Portfolio image 4
-│   ├── 🖼️ img5.png             # Portfolio image 5
-│   ├── 📄 article1.png          # Blog article image 1
-│   ├── 📄 article2.png          # Blog article image 2
-│   ├── 📄 article3.png          # Blog article image 3
-│   └── 🎨 Vector.png            # Decorative vector graphic
-├── 📝 README.md                 # Project documentation
-└── 🔧 package.json              # Project dependencies (if any)
-⚙️ Installation
-Prerequisites
-Modern web browser (Chrome, Firefox, Safari, Edge)
+Contributions are welcome. A simple workflow:
 
-Code editor (VS Code recommended)
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feat/your-change`
+3. Make your changes and commit with clear messages
+4. Push and open a Pull Request
 
-Live Server extension (for local development)
+If you're proposing a major change, open an issue first to discuss the plan.
 
-Local Development Setup
-Clone the Repository
+## License
 
-bash
-git clone https://github.com/yourusername/riterio.git
-cd riterio
-Open in VS Code
+This project includes a `LICENSE` file. By default this repository contains an MIT-style license. See `LICENSE` for details.
 
-bash
-code .
-Run with Live Server
+## Contact
 
-Install Live Server extension in VS Code
+Author: md-abu-kayser
 
-Right-click on index.html and select "Open with Live Server"
+GitHub: https://github.com/md-abu-kayser/riterio-studio
 
-Or use any local server of your choice
+If you'd like a custom version of this template or help deploying it, open an issue or reach out via GitHub.
 
-Production Deployment
-Option 1: GitHub Pages
-Fork this repository
+---
 
-Go to repository Settings → Pages
-
-Select source branch (usually main or gh-pages)
-
-Your site will be available at https://yourusername.github.io/riterio
-
-Option 2: Netlify
-Build command: (not required for static site)
-
-Publish directory: . (root directory)
-
-Deploy site from GitHub repository
-
-Option 3: Vercel
-Import project from GitHub
-
-Vercel will automatically detect and deploy
-
-Custom domain can be added in settings
-
-🎮 Usage
-Theme Switching
-Click the theme icon in the navigation bar
-
-Select from 5 predefined themes or dark mode
-
-Theme preference is saved in localStorage
-
-Navigation
-Smooth scroll navigation between sections
-
-Mobile-responsive hamburger menu
-
-Sticky navigation bar with glass morphism effect
-
-Interactive Elements
-Hover over portfolio items for overlay effects
-
-Click buttons with animated feedback
-
-Form validation on contact form
-
-Image hover zoom effects
-
-Responsive Behavior
-Resize browser to see responsive breakpoints
-
-Test on mobile devices for touch interactions
-
-Check keyboard navigation for accessibility
-
-🎨 Themes Customization
-Available Themes
-Light - Default clean theme
-
-Dark - Dark mode for reduced eye strain
-
-Ocean Blue (#3A86FF) - Professional and calm
-
-Rose Pink (#FF006E) - Creative and energetic
-
-Royal Purple (#8338EC) - Luxury and elegance
-
-Sunset Orange (#FB5607) - Warm and inviting
-
-Golden Yellow (#FFBE0B) - Bright and optimistic
-
-Custom Theme Development
-To add a new theme:
-
-Update Tailwind Config
-
-javascript
-// Add to tailwind.config theme.extend.colors
-colors: {
-  'theme-6': '#YOUR_COLOR_CODE',
-}
-Add CSS Variables
-
-css
-[data-theme="theme-6"] {
-  --primary-color: #YOUR_COLOR;
-  --secondary-color: #YOUR_SECONDARY_COLOR;
-}
-Update Theme Switcher
-
-html
-<li><a data-set-theme="theme-6" class="theme-controller">Your Theme Name</a></li>
-⚡ Performance
-Optimization Techniques
-Minified Assets: Compressed images and icons
-
-Efficient CSS: Tailwind's utility-first approach
-
-Lazy Loading: Images load on viewport entry
-
-CDN Delivery: Fast loading of external resources
-
-Code Splitting: Modular CSS and JavaScript
-
-Performance Metrics
-Metric	Score	Status
-Lighthouse Performance	95+	🟢 Excellent
-First Contentful Paint	<1.5s	🟢 Fast
-Largest Contentful Paint	<2.5s	🟢 Good
-Cumulative Layout Shift	<0.1	🟢 Stable
-Time to Interactive	<3s	🟢 Responsive
-🌐 Browser Support
-Browser	Version	Support
-Chrome	90+	✅ Full Support
-Firefox	88+	✅ Full Support
-Safari	14+	✅ Full Support
-Edge	90+	✅ Full Support
-Opera	76+	✅ Full Support
-Mobile Browsers	Latest	✅ Full Support
-🤝 Contributing
-We love contributions! Here's how you can help:
-
-Reporting Issues
-Check existing issues before creating new ones
-
-Provide detailed description and steps to reproduce
-
-Include browser and device information
-
-Feature Requests
-Use the feature request template
-
-Explain the benefit and use case
-
-Consider if it aligns with project goals
-
-Development Workflow
-Fork the repository
-
-Create a feature branch (git checkout -b feature/amazing-feature)
-
-Commit your changes (git commit -m 'Add amazing feature')
-
-Push to the branch (git push origin feature/amazing-feature)
-
-Open a Pull Request
-
-Code Standards
-Follow existing code style and structure
-
-Use semantic HTML5 elements
-
-Ensure accessibility compliance
-
-Test across multiple devices and browsers
-
-Update documentation as needed
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-MIT License Features:
-
-✅ Free to use for personal and commercial projects
-
-✅ Freedom to modify and distribute
-
-✅ Permission to use privately
-
-✅ Include original license and copyright notice
-
-👥 Team
-Project Lead & Developer
-
-Your Name - GitHub | Portfolio
-
-Special Thanks To
-
-Tailwind CSS Team - For the amazing utility framework
-
-DaisyUI Contributors - For beautiful UI components
-
-Font Awesome - For comprehensive icon library
-
-Google Fonts - For excellent typography options
-
-🏆 Awards & Recognition
-This project demonstrates excellence in:
-
-Frontend Development - Modern HTML5, CSS3, and JavaScript
-
-UI/UX Design - User-centered design principles
-
-Responsive Web Design - Mobile-first approach
-
-Web Performance - Optimized loading and rendering
-
-Accessibility - Inclusive design practices
-
-Code Quality - Clean, maintainable code structure
-
-🔮 Future Enhancements
-Planned Features
-Blog CMS Integration - Dynamic content management
-
-E-commerce Functionality - Product catalog and shopping cart
-
-Advanced Animations - GSAP integration for complex animations
-
-PWA Features - Offline functionality and app-like experience
-
-Multi-language Support - Internationalization (i18n)
-
-Admin Dashboard - Content management interface
-
-Technical Improvements
-TypeScript Integration - Enhanced type safety
-
-Component Framework - React/Vue.js migration
-
-Backend API - Node.js/Express server
-
-Database Integration - MongoDB/PostgreSQL
-
-Authentication System - User accounts and profiles
-
-📞 Contact
-Project Maintainer: Your Name
-Email: your.email@domain.com
-GitHub: @yourusername
-LinkedIn: Your Profile
-Portfolio: Your Website
-
-Support Channels
-📧 Email Support: support@riterio.com
-
-🐛 Bug Reports: GitHub Issues
-
-💡 Feature Requests: GitHub Discussions
-
-📚 Documentation: Project Wiki
-
-🙏 Acknowledgments
-Inspiration: Modern interior design trends and principles
-
-Design Resources: Unsplash for high-quality images
-
-Development Tools: VS Code, Live Server, Chrome DevTools
-
-Testing Tools: BrowserStack, Lighthouse, WebPageTest
-
-Community: Stack Overflow, GitHub Community, Tailwind CSS Discord
-
-<div align="center">
-⭐ If you found this project helpful, please give it a star on GitHub!
-Built with ❤️ using HTML5, CSS3, Tailwind CSS, and DaisyUI
-
-⬆ Back to Top
-
-</div>
+Thank you for checking out Riterio Studio — simple, fast, and ready to be customized into something great.
